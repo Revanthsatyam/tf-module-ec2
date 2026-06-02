@@ -9,6 +9,7 @@ variable "instance_type" {
 }
 
 variable "tags" {
+  type        = map(string)
   description = "Tags for the EC2 instance"
   default     = {
     Name = "terragrunt-ec2-instance"

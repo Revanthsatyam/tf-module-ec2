@@ -19,3 +19,7 @@ variable "tags" {
 variable "security_group_name" {
   description = "Name of the security group to associate with the EC2 instance"
 }
+
+variable "vpc_id" {
+  description = "ID of the VPC where the EC2 instance will be launched"
+}
